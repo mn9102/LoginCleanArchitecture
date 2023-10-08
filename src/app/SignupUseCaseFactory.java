@@ -1,7 +1,7 @@
 package app;
 
 import data_access.FileUserDataAccessObject;
-import data_access.UserSignupDataAccessInterface;
+import use_case.UserSignupDataAccessInterface;
 import entity.CommonUserFactory;
 import entity.UserFactory;
 import interface_adapter.*;
@@ -12,6 +12,11 @@ import view.SignupView;
 
 import javax.swing.*;
 import java.io.IOException;
+
+//Lab 4 - Q2 - Somewhere in the program, the SignupInteractor object is created (using new SignupInteractor(…)).
+// In what order are the various CA classes instantiated?
+// 1. Data Access Interface, 2. Output Boundary, 3. UserFactory 4. Input Boundary
+
 
 public class SignupUseCaseFactory {
 

@@ -1,10 +1,13 @@
 package use_case;
 
-import data_access.UserSignupDataAccessInterface;
 import entity.User;
 import entity.UserFactory;
 
 import java.time.LocalDateTime;
+
+//Step 4 - Q2 : how does SignupInteractor get its DAO & presenter?
+// DAO: accessed from Data Access Interface
+// Presenter: accessed from Output Boundary
 
 public class SignupInteractor implements SignupInputBoundary {
     final UserSignupDataAccessInterface userDataAccessObject;
